@@ -1,0 +1,42 @@
+PSEUDOCLASE:
+a:link | :visited | :hover | :active   // vezi "text and a:link.txt"
+:hover ----- poate fi aplicat si altor elemente nu doar "a:link"
+input:focus				// momentul cand faci click pe campul "input"
+input:checked+label  			  // input conectat
+input:indeterminate+label   // input deconectat - lucreaza cu js
+
+input:disabled
+input:active
+input:required   // input obligatoriu spre completare
+input:optional   // neobligatoriu
+input:valid
+input:invalid
+input:read-only
+input:read-write
+
+li:empty      // adresare catre "li" care nu detin nimic
+
+div:target		// alege "div" cu id="exempl" indicat in link ca <a href="#exempl">
+
+p:not(.test)  // toate "p" fara class="test"
+-------------------------------------------------------
+PSEUDOELEMENTE:
+p::first-line   	// prima linie (NU! rand) din paragraful "p"
+p::first-letter		// prima pinie din fiecare paragraf "p"
+p::selection      // "p" in momentul cand este selectat
+---------------------------------
+li::after{content: ']';}   // dupa element; "content" este IMPORTANT
+li::before{content:'[';} 	 // inainte de element
+li:hover::after, li:hover::before{content: '!!!';}
+<ul>
+	<li>Text 1</li>
+	<li>Text 2</li>
+	<li>Text 3</li>
+</ul>
+VA AFISA:
+*[Text 1]
+*[Text 2]
+*[Text 2]
+
+---------------------------------
+input::placeholder				//stilizarea info din campul de introducere "input"

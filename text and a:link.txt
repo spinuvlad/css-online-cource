@@ -1,0 +1,60 @@
+aliniere text:
+	text-align: left;
+	text-align: right;
+	text-align: center;
+	text-align: justify;
+font-weight - жирность (200, 400, 600, 900)
+font-style - курсив (italic, normal)
+line-height - межстрочный интервал
+
+font: italic 12pt/40pt Arial, sans-serif;
+	font: курсив жирность размер_шрифта/интервал_между_строками семейство_шрифта.
+
+
+text-indent: 50px; //50px отступ первой строки текста
+
+vertical-align позволяет задать выравнивание по вертикали
+	top, bottom, middle, 50px
+https://web-standards.ru/articles/vertical-align/
+
+---------------------------- 
+text-decoration: none;						// fara linie
+text-decoration: underline;      // linie in partea de JOS a textului
+text-decoration: overline;       // linie in partea de SUS a textului
+text-decoration: line-through;   // text taiat
+
+text-decoration-line: none; | underline; | overline; | line-through;
+text-decoration-style: solid; | double; | dotted; | dashed; | wavy; - valuros
+text-decoration-color: color;
+-----------------------------
+IMPORTANT DE PASTRAT ORDINEA:
+a:link				 //link nevizitat
+a:visited			 //link vizitat
+a:hover   		 //навели курсор мышки
+a:active			 //in momentul cand faci click pe element
+-----------------------------
+
+PERSONALIZARE "UNDERLINE":
+a:link {
+color: red;
+text-decoration: none;
+border-bottom: 1px solid blue;
+}
+a:hover {
+border-bottom-color: green;
+}
+-----
+a {
+  color: #258;
+  text-decoration: underline;
+}
+span {
+  color: #d43;
+  text-decoration: none;
+}
+
+<a href="#">
+  <span>Text</span>
+</a>
+-------
+http://alistapart.com/article/customunderlines
