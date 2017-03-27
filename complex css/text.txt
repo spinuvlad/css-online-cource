@@ -24,6 +24,10 @@ white-space:
 			pre-wrap;	
 			pre-line;
 			normal;	
+
+text-overflow:
+	clip;					      	//(default)
+	ellipsis;							//"..." cand nu se incadreaza textul in bloc. OBLIGATORIU: overflow: hidden;
 ------------------------------------------------------
 columns: ширина количество;  //imparte textul in coloane
 columns: auto auto; (default)

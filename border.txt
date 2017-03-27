@@ -21,6 +21,8 @@ border: 3px dotted red; (border: border-width border-style border-color;)
 border-image: url(source) slice/width/outset repeat | inherit | none;
 border-image: url(путь к картинке) смещение/толщина/сдвиг повторение;
 ------------------------------------
+box-sizing: border-box  //border-ul copilului se incadreaza in elementul parinte
+
 OUTLINE:
 В отличие от border граница через outline не расширяет элемент: если у элемента задана ширина width в 200px, то при наличии border толщиной в 1px реальная ширина элемента будет 202px (по 1px границы с каждой стороны). Если же задать границу через outline - то реальная ширина элемента будет по-прежнему 200px. Визуально ширина будет 202px, но все прочие элементы будут вести себя так, как будто границы нет (она даже может налезть на другие элементы) и ширина элемента 200px. 
 

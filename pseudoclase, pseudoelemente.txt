@@ -1,28 +1,16 @@
 PSEUDOCLASE:
 a:link | :visited | :hover | :active   // vezi "text and a:link.txt"
 :hover ----- poate fi aplicat si altor elemente nu doar "a:link"
-input:focus				// momentul cand faci click pe campul "input"
-input:checked+label  			  // input conectat
-input:indeterminate+label   // input deconectat - lucreaza cu js
-
-input:disabled
-input:active
-input:required   // input obligatoriu spre completare
-input:optional   // neobligatoriu
-input:valid
-input:invalid
-input:read-only
-input:read-write
 
 li:empty      // adresare catre "li" care nu detin nimic
 
-div:target		// alege "div" cu id="exempl" indicat in link ca <a href="#exempl">
+div:target		// playcode.io/target
 
 p:not(.test)  // toate "p" fara class="test"
 -------------------------------------------------------
 PSEUDOELEMENTE:
 p::first-line   	// prima linie (NU! rand) din paragraful "p"
-p::first-letter		// prima pinie din fiecare paragraf "p"
+p::first-letter		// prima litera din fiecare paragraf "p"
 p::selection      // "p" in momentul cand este selectat
 ---------------------------------
 li::after{content: ']';}   // dupa element; "content" este IMPORTANT
@@ -37,6 +25,12 @@ VA AFISA:
 *[Text 1]
 *[Text 2]
 *[Text 2]
-
 ---------------------------------
-input::placeholder				//stilizarea info din campul de introducere "input"
+css4: css4-selectors.com  --> selector test (vezi daca browserul este compatibil cu css4)
+p:not(.intro, blockquote)
+a:has(> img)   //fiecare element "a" care contine img
+p:matches(.alert, .error, .warn)  //toti "p" cu clasele respective
+
+a:any-link   // inlocuieste a:link si a:visited impreuna
+nav:local-link  //link-ul care duce la "home"
+
