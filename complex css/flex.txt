@@ -36,6 +36,7 @@ parinte{
 		align-items: baseline;					//asemanator cu "flex-start" + aranjarea dupa centrul primul element din copil
 	}
 	------------------------------------------------ align-content (parinte)
+	//lucreaza ca align-items doar atunci cand parintele are "height"
 	parinte{
 	align-content: flex-start;	// Ряды группируются в верхней части контейнера.
 	align-content: flex-end;	//Ряды группируются в нижней части контейнера.
